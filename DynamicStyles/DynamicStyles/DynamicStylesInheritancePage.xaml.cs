@@ -8,12 +8,13 @@ using Xamarin.Forms;
 
 namespace DynamicStyles
 {
-    public partial class DynamicStylesPage : ContentPage
+    public partial class DynamicStylesInheritancePage : ContentPage
     {
-        public DynamicStylesPage()
+        public DynamicStylesInheritancePage()
         {
             InitializeComponent();
         }
+
         void OnButton1Clicked(object sender, EventArgs args)
         {
             Resources["buttonStyle"] = Resources["buttonStyle1"];

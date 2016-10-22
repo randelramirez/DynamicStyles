@@ -36,6 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="DynamicStylesInheritancePage.xaml.cs">
+      <DependentUpon>DynamicStylesInheritancePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DynamicStylesPage.xaml.cs">
       <DependentUpon>DynamicStylesPage.xaml</DependentUpon>
     </Compile>
@@ -61,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DynamicStylesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DynamicStylesInheritancePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

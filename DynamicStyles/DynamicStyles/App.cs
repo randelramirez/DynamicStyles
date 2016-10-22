@@ -12,22 +12,8 @@ namespace DynamicStyles
         public App()
         {
             // The root page of your application
-            var content = new ContentPage
-            {
-                Title = "DynamicStyles",
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
-
-            MainPage = new NavigationPage(content);
+            //MainPage = new DynamicStylesPage();
+            MainPage = new DynamicStylesInheritancePage();
         }
 
         protected override void OnStart()
